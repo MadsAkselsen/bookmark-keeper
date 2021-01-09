@@ -25,17 +25,78 @@ body {
 h1 {
   color: white;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   border-radius: var(--border-radius);
   cursor: pointer;
   text-align: center;
   text-transform: uppercase;
   width: 275px;
   margin: 0 auto 10px;
-
   user-select: none;
 }
 
 h1:hover {
+  background: rgba(0, 0, 0, 1);
+}
+
+/* bookmarks */
+.bookmarks-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
   background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin: 10px;
+}
+
+.item:hover {
+  background: rbga(0, 0, 0, 0.6);
+}
+
+a {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+.fa-times {
+  float: right;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.name {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.name img {
+  height: 20px;
+  width: 20px;
+  vertical-align: sub; /* align element vertically */
+  margin-right: 5px;
+}
+
+/* Media Query: large smarthphone (vertical) */
+
+@media screen and (max-width: 600px) {
+  .bookmarks-container {
+    flex-direction: column;
+  }
 }
