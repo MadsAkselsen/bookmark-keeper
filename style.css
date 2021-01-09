@@ -18,6 +18,10 @@ body {
   font-family: Karla, sans-serif;
 }
 
+.filler {
+  height: 20px;
+}
+
 h1 {
   color: white;
   padding: 20px;
@@ -27,7 +31,8 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   width: 275px;
-  margin: 20px auto 10px;
+  margin: 0 auto 10px;
+
   user-select: none;
 }
 
