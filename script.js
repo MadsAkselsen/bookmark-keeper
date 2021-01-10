@@ -85,7 +85,6 @@ function buildBookmarks() {
   // Build items
   bookmarks.forEach((bookmark) => {
     const { title, url } = bookmark;
-
     // Item
     const item = document.createElement('div');
     item.classList.add('item');
